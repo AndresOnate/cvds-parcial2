@@ -2,11 +2,6 @@ package com.tobias.saul.springbootjpamediumdemo.model;
 
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-
-import org.springframework.cglib.core.Local;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -71,7 +66,6 @@ public class Employee {
 		return this.lastName;
 	}
 
-
 	public String getRole(){
 		return this.role;
 	}
@@ -90,7 +84,6 @@ public class Employee {
 		return periodo.getYears();
 
 	}
-
 
 	@Override
 	public String toString() {
